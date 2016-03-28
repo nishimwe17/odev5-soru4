@@ -14,7 +14,7 @@ int main()
 	p_fichier=fopen("salut.txt","r");
 	
 	
-        while ((c = getc(p_fichier)) != EOF)
+        while ((c = getchar(p_fichier)) != EOF)
 	{
     		if (c>='A' && c<='Z')
 		{
