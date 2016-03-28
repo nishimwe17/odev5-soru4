@@ -3,7 +3,7 @@
 
 int main()
 {
-	char c, ligne[20];
+	char c;
 	FILE *p_fichier;
 	int kucuk_harf=0;
 	int buyuk_harf=0;
