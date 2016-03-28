@@ -37,7 +37,7 @@ int main()
     			diger++;
     		}
     	}
-	printf("Dosyada %d buyuk;\n%d kucuk harf;\n%d sayi;\n%d bosluk;\n%d ozel karakter.",buyuk_harf,kucuk_harf,rakam,bosluk,diger);
+	printf("Dosyada %d buyuk harf;\n%d kucuk harf;\n%d sayi;\n%d bosluk;\n%d ozel karakter bulundu.",buyuk_harf,kucuk_harf,rakam,bosluk,diger);
 
 	fclose(p_fichier);
 	return 0;
