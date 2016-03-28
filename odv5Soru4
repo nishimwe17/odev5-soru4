@@ -1,1 +1,45 @@
-# odev5-soru4
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	char c, ligne[20];
+	FILE *p_fichier;
+	int kucuk_harf=0;
+	int buyuk_harf=0;
+	int rakam=0;
+	int bosluk=0;
+	int diger=0;
+
+	p_fichier=fopen("salut.txt","r");
+	
+	
+        while ((c = getc(p_fichier)) != EOF)
+	{
+    		if (c>='A' && c<='Z')
+		{
+    			buyuk_harf++;
+    		}
+    		else if (c>='a' && c <='z')
+		{
+    			kucuk_harf++;
+    		}
+    		else if (c>='0' && c<='9')
+		{
+    			rakam++;
+    		}
+    		else if (c == ' ')
+		{
+    			bosluk++;
+    		}
+    		else if (c>=33 && c<=47)
+		{
+    			diger++;
+    		}
+    	}
+	printf("Dosyada %d buyuk;\n%d kucuk harf;\n%d sayi;\n%d bosluk;\n%d ozel karakter.",buyuk_harf,kucuk_harf,rakam,bosluk,diger);
+
+	fclose(p_fichier);
+	return 0;
+}
+
